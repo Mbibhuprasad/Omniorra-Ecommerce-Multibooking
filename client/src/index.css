@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+
+/* Dark mode support */
+:root {
+  color-scheme: light dark;
+}
+
+/* small helpers */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(65, 90, 97);
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
